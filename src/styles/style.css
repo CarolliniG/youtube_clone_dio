@@ -110,18 +110,27 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0; /* Removido */
+}
+
+.video-info h4,
+.video-info p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .main-content {
+  flex: 0 0 70%;
+  max-width: 70%;
   background: #fff;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.03);
 }
 
-iframe {
+.main-content iframe {
   width: 100%;
-  max-width: 900px;
+  max-width: 100%;
   min-height: 500px;
   margin-bottom: 24px;
   flex-grow: 4;
